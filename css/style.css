@@ -1,0 +1,243 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #000;
+}
+
+
+h2 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+/* color site thema */
+.first-color {
+    color: #333B8D;
+}
+
+.second-color {
+    color: #314FFE;
+}
+
+.base-color {
+    color: #6876C5;
+}
+
+
+/* components cart*/
+
+.cart {
+    padding: 22px;
+    margin: 24px 12px;
+    border-radius: 3px;
+    min-width: 200px;
+}
+
+.line-height-x2 {
+    line-height: 2rem;
+}
+
+.line-height-x1-3 {
+    line-height: 1.3rem;
+}
+
+.cart__background {
+    background-color: #fff;
+}
+
+.cart__border {
+    border: 1px solid rgb(226, 226, 226);
+}
+
+/* components button*/
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    margin: 20px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.btn__info {
+    background-color: #FFAB02;
+    color: #fff;
+}
+
+/* text style */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-large {
+    font-size: 3em;
+}
+
+.text-small {
+    font-size: 1.26em;
+    line-height: 30px;
+}
+
+.text-xsmall {
+    font-size: .85em;
+    font-weight: 400;
+}
+
+.font-thin {
+    font-weight: 100;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+/* icons */
+.images-icon {
+    display: inline-block;
+    padding: 8px 8px 3px 8px;
+    border-radius: 5px;
+}
+
+.blue svg {
+    fill: #1E88E5;
+}
+
+.green svg {
+    fill: #43A048;
+}
+
+.yellow svg {
+    fill: #F9A825;
+}
+
+.purple svg {
+    fill: #8D25AB;
+}
+
+/* modifier container */
+.container__gradient {
+    background: rgb(234, 236, 247);
+    background: linear-gradient(145deg, rgba(234, 236, 247, 1) 0%, rgba(252, 253, 254, 1) 100%);
+}
+
+/* modifier background */
+.bgc__blue {
+    background-color: #BBDEFB;
+}
+
+.bgc__green {
+    background-color: #C8E6C9;
+}
+
+.bgc__yellow {
+    background-color: #FFF9C4;
+}
+
+.bgc__purple {
+    background-color: #E1BEE7;
+}
+
+svg {
+    fill: rebeccapurple;
+}
+
+/* layout */
+.section {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1343px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.m-top-negative {
+    margin-top: -50px;
+}
+
+.m-remove {
+    margin: 0;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.bg-1 {
+    background-image: url(/images/bg-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -80% 100px;
+}
+
+.bg-2 {
+    position: relative;
+    background-image: url(/images/bg-2.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/bg-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-95deg);
+    z-index: -1;
+    left: 40%;
+    top: -50%
+}
+
+
+/* tylko dla tego zadania */
+@media (min-width: 1200px) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+@media (min-width: 640px) {
+    .w-50sm {
+        width: 50%;
+        min-width: 240px;
+    }
+}
